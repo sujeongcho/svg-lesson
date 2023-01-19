@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* keyframes 이름{
+    
+    타임라인 이라는 개념이 있음
+
+    */
+        @keyframes sample-ani{
+           0%{transform: translate(0,0);}
+           50%{
+            background: goldenrod;
+            transform: translate(910px, 400px);} 
+           100%{transform: translate(0px, 0px);}
+        }
+        .box{
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: #ff8615;
+            animation: sample-ani 30s linear infinite ;
+        }
+
+        .box:hover{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <div class="box">전시 관람<br>예약 하기</div>
+</body>
+</html>

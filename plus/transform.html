@@ -12,18 +12,23 @@
         }
 
         .box{
-            width: auto;
+            width: 100px;
             height: 100px;
             border: 2px solid black;
             background: rgba(255,255,0,0.7);
-            transition: 0.5s;
-            
+
         }
-        
+
         .box:hover{
-            width: 200px;
-            background: purple;
-            transition: 2s;
+            /* scale(1)이 100% 크기임 2는 두배 */
+            /* transform: scale(2) rotate(15deg); */
+            /* transform: skewY(-30deg); */
+            /* transform: translate(30px, 10px); */
+            /* transform: translateY(-30px); */
+            transform: rotate(30deg);
+            transform-origin: 30% 50%
+
+
         }
     </style>
 </head>
